@@ -1,8 +1,9 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: aliceblue;
+    background-color: rgb(220, 220, 220);
     font-size: 2vw;
+    font-family: arial;
 }
 
 html{
@@ -11,7 +12,7 @@ html{
 }
 
 #navbar{
-    background-color: rgba(222, 222, 222, 0.662);
+    background-color: rgba(145, 145, 145, 0.662);
     position: fixed;
     width: 100%;
 }
@@ -30,7 +31,7 @@ html{
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 27px;
+    font-size: 2.2vw;
 }
 
 #navbar a{
@@ -45,7 +46,7 @@ html{
 
 #bild{
     width: 100%;
-    padding-top: 6.4vw;
+    padding-top: 6.5vw;
 }
 
 #ommig{
@@ -110,7 +111,7 @@ html{
 }
 
 #footer{
-    background-color: rgba(222, 222, 222, 0.662);
+    background-color: rgba(145, 145, 145, 0.662);
     width: 100%;
     clear: both;
     text-align: center;
@@ -124,9 +125,12 @@ html{
     width: 100px;
     height: 50px;
     border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 .DarkMode{
-    background-color: black;
-    color: white;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 233);
 }
