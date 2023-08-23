@@ -59,7 +59,7 @@ html{
 
 #navbar a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(220, 220, 220);
     transition: 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ html{
 
 #infostart{
     width: 60%;
-    color: wheat;
+    color: rgb(220, 220, 220);
     float: right;
     padding-top: 17%;
 }
