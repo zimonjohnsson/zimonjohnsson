@@ -161,6 +161,7 @@ html{
 .placeh{
     width: 50%;
     float: right;
+    text-align: center;
 }
 
 .placeh h1{

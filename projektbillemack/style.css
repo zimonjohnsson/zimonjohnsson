@@ -1,0 +1,163 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    background-color: aliceblue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    background-color: rgba(255, 166, 0, 0.801);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#navbarlogo{
+    float: left;
+    padding-left: 20px;
+}
+
+#navbarlogo img{
+    height: 3rem;
+}
+
+#navbarlinks{
+    float: right;
+    padding-right: 20px;
+}
+
+#navbarlinks a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s ease;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-radius: 10%;
+}
+
+#navbarlinks a:hover{
+    background-color: rgb(0, 143, 219);
+}
+
+#bild{
+    width: 100%;
+    padding-top: 3.3rem;
+    position: relative;
+}
+
+#bild img{
+    width: 100%;
+}
+
+.infov{
+    float: left;
+    width: 30%;
+    padding-left: 18%;
+}
+
+.infov p{
+    font-size: 2rem;
+}
+
+.infov h1{
+    font-size: 2.5rem;
+}
+
+.infoh{
+    float: right;
+    width: 30%;
+    padding-right: 18%;
+}
+
+.infoh iframe{
+    width: 100%;
+    padding-top: 6vh;
+}
+
+#footer{
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.801);
+    clear: both;
+    font-size: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.dropdown{
+    display: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    padding-top: 0.4rem;
+}
+
+.links{
+    display: inline;
+}
+
+.visa{
+    display: inline !important;
+}
+
+.hamb{
+    width: 2.3rem;
+    height: 0.35rem;
+    background-color: black;
+    margin: 0.35rem 0;
+}
+
+@media only screen and (max-width: 1400px) {
+    .infov{
+        width: 80%;
+        float: none;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .infoh{
+        width: 80%;
+        float: none;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .infov p{
+        font-size: 1.5rem;
+    }
+    
+    .infov h1{
+        font-size: 2rem;
+    }
+
+    #footer{
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 700px){
+    #navbarlinks{
+        display: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .links{
+        display: inline-block !important;
+        width: 100%;
+    }
+
+    .dropdown{
+        display: block;
+        float: right;
+    }
+    
+}
