@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: arial;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 html{
@@ -10,10 +10,13 @@ html{
 }
 
 #navbar{
-    background-color: rgba(255, 166, 0, 0.801);
-    width: 100%;
+    background-color: rgb(255, 166, 0);
+    width: 80%;
     position: fixed;
     z-index: 10;
+    box-shadow: rgba(149, 157, 165, 0.854) 0px 8px 24px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 #navbarlogo{
@@ -32,7 +35,7 @@ html{
 
 #navbarlinks a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     transition: 0.3s ease;
     font-size: 1.2rem;
     display: inline-block;
@@ -46,13 +49,21 @@ html{
 }
 
 #bild{
-    width: 100%;
-    padding-top: 3.3rem;
-    position: relative;
+    height: 80vh;
+    background-image: url("mack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#bild img{
-    width: 100%;
+#bildtext{
+    width: 50vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    text-align: center;
+    margin-top: 16vh;
+    font-size: 2.5rem;
+    color: rgb(255, 166, 0);
 }
 
 .infov{
@@ -138,7 +149,15 @@ html{
         font-size: 1.5rem;
     }
 
-
+    #bildtext{
+        width: 100vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        text-align: center;
+        margin-top: 16vh;
+        font-size: 2.5rem;
+    }
+    
 
 }
 
