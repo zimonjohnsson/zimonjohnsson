@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: arial;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(220, 220, 220);
 }
 
 html{
@@ -11,12 +11,12 @@ html{
 
 #navbar{
     background-color: rgb(255, 166, 0);
-    width: 80%;
+    width: 85%;
     position: fixed;
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.854) 0px 8px 24px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
 }
 
 #navbarlogo{
@@ -49,10 +49,11 @@ html{
 }
 
 #bild{
-    height: 80vh;
+    height: 90vh;
     background-image: url("mack.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -61,9 +62,9 @@ html{
     padding-left: 25vw;
     padding-right: 25vw;
     text-align: center;
-    margin-top: 16vh;
+    margin-top: 30vh;
     font-size: 2.5rem;
-    color: rgb(255, 166, 0);
+    color: rgb(211, 211, 211);
 }
 
 .infov{
@@ -154,7 +155,7 @@ html{
         padding-left: 0vw;
         padding-right: 0vw;
         text-align: center;
-        margin-top: 16vh;
+        margin-top: 30vh;
         font-size: 2.5rem;
     }
     
