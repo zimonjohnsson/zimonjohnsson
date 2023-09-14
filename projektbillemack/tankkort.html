@@ -8,23 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="laddaText()">
-<div id="navbar">
-    <div id="navbarlogo">
-        <a href="index.html"><img src="logo.png" alt=""></a>
+    <div id="navbar">
+        <div id="navbarlogo">
+            <a href="index.html"><img src="logo.png" alt=""></a>
+        </div>
+        <button class="dropdown" onclick="showLinks(this)">
+            <div class="hamb1"></div>
+            <div class="hamb2"></div>
+            <div class="hamb3"></div>
+        </button>
+        <div id="navbarlinks">
+            <a href="omoss.html" class="links">Om oss</a>
+            &nbsp;
+            <a href="tankkort.html" class="links">Tankkort</a>
+            &nbsp;
+            <a href="bio.html" class="links">BIO-DIESEL/HVO100</a>
+            &nbsp;
+            <a onclick="visalinks()" class="links">Länkar&nabla;</a>
+            <div id="otherlinks">
+                <a href="https://www.billefast.se">billefast.se</a>
+                &nbsp;
+                <a href="https://www.billesol.se">billesol.se</a>
+                &nbsp;
+                <a href="https://www.billeblue.se">billeblue.se</a>
+            </div>
+        </div>
     </div>
-    <button class="dropdown" onclick="showLinks()">
-        <div class="hamb"></div>
-        <div class="hamb"></div>
-        <div class="hamb"></div>
-    </button>
-    <div id="navbarlinks">
-        <a href="omoss.html" class="links">Om oss</a>
-        &nbsp;
-        <a href="tankkort.html" class="links">Tankkort</a>
-        &nbsp;
-        <a href="bio.html" class="links">BIO-DIESEL/HVO100</a>
-    </div>
-</div>
 
 <div id="bild">
     <div id="bildtext">
