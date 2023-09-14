@@ -7,7 +7,7 @@
     <title>BilleMack</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="laddaText()">
 <div id="navbar">
     <div id="navbarlogo">
         <a href="index.html"><img src="logo.png" alt=""></a>
@@ -23,12 +23,21 @@
         <a href="tankkort.html" class="links">Tankkort</a>
         &nbsp;
         <a href="bio.html" class="links">BIO-DIESEL/HVO100</a>
+        &nbsp;
+        <a onclick="visalinks()" class="links">Länkar&nabla;</a>
+        <div id="otherlinks">
+            <a href="https://www.billefast.se">billefast.se</a>
+            &nbsp;
+            <a href="https://www.billesol.se">billesol.se</a>
+            &nbsp;
+            <a href="https://www.billeblue.se">billeblue.se</a>
+        </div>
     </div>
 </div>
 
 <div id="bild">
     <div id="bildtext">
-    <h3>Spara pengar och tanka himmavid</h3>
+    <h3 id="textbild">Spara pengar och tanka himmavid</h3>
     </div>
 </div>
 

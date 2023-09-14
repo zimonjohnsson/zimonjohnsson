@@ -48,6 +48,14 @@ html{
     background-color: rgb(0, 143, 219);
 }
 
+#otherlinks{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
 #bild{
     height: 90vh;
     background-image: url("mack.jpg");
@@ -64,7 +72,12 @@ html{
     margin-top: 40vh;
     text-align: center;
     font-size: 2.5rem;
-    color: rgb(211, 211, 211);
+    color: rgba(211, 211, 211, 0);
+}
+
+.textladda{
+    color: rgb(211, 211, 211) !important;
+    transition: 1s ease;
 }
 
 .infov{
@@ -181,7 +194,7 @@ html{
 
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 900px){
     #navbar{
         width: 100%;
         margin-left: 0;
