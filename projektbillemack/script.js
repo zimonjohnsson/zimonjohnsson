@@ -1,5 +1,6 @@
-function showLinks(){
+function showLinks(x){
     document.getElementById("navbarlinks").classList.toggle("visa");
+    x.classList.toggle("change");
 }
 
 function laddaText(){
