@@ -61,8 +61,8 @@ html{
     width: 50vw;
     padding-left: 25vw;
     padding-right: 25vw;
+    margin-top: 40vh;
     text-align: center;
-    margin-top: 30vh;
     font-size: 2.5rem;
     color: rgb(211, 211, 211);
 }
@@ -85,11 +85,16 @@ html{
     float: right;
     width: 40%;
     padding-right: 9%;
+    text-align: center;
 }
 
 .infoh iframe{
     width: 100%;
     padding-top: 1rem;
+}
+
+.infoh img{
+    width: 50%;
 }
 
 #footer{
