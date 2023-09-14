@@ -99,6 +99,20 @@ html{
     font-size: 1.3rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
+    line-height: 2rem;
+}
+
+#footer a{
+    color: black;
+}
+
+#footer h2{
+    line-height: 0.5rem !important;
+}
+
+#linje{
+    border: 0.1rem solid rgb(58, 58, 58);
+    width: 25%;
 }
 
 .dropdown{
@@ -184,6 +198,19 @@ html{
     .dropdown{
         display: block;
         float: right;
+    }
+
+    #footer{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #linje{
+        width: 80%;
+    }
+
+    #footer h2{
+        font-size: 1.5rem;
     }
     
 }
