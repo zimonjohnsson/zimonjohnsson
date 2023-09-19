@@ -17,6 +17,7 @@ html{
     box-shadow: rgba(149, 157, 165, 0.854) 0px 8px 24px;
     margin-right: 7.5%;
     margin-left: 7.5%;
+    user-select: none;
 }
 
 #navbarlogo{
@@ -77,6 +78,7 @@ html{
     text-align: center;
     font-size: 2.5rem;
     color: rgba(211, 211, 211, 0);
+    user-select: none;
 }
 
 .textladda{
