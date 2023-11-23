@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelDeal - Cyklar</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="app.css">
+    <style>
+        #navCyklar{
+            color: red;
+        }
+    </style>
+    	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav style="height: 100px;" id="ajaxNav" class="navbar navbar-expand-md navbar-light bg-light fixed-top"></nav>
+
+    <div class="conomoss">
+
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5" style="padding-top: 5.5rem;">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Cyklar</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Bläddra igenom våra cyklar</p>
+                    <p>
+                        <a href="cart.html"></a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        </div>
+
+    <div class="container px-4 px-lg-5 mt-5 products">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/Cykel4.jpg" alt="..." data-toggle="modal" data-target="#productModalc"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Ginger Fast</h5>
+                            <!-- Product price-->
+                            $3,000.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Ginger Fast')">Lägg Till</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Ginger Fast</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel4.jpg" alt="Produktbild">
+                      <p>
+                        Ginger Fast är en smidig och snabb cykel med stil och prestanda.</p>
+                      <p>$3,000.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Ginger Fast')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Cykel5.jpg" alt="..." data-toggle="modal" data-target="#productModalc1"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Yaba Dingel</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $2,500.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Yaba Dingel')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Yaba Dingel</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel5.jpg" alt="Produktbild">
+                      <p>
+                      
+                    Yaba Dingel är en praktisk och pålitlig cykel med enkel design och användbarhet.</p>
+                      <p>$2,500.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Yaba Dingel')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Cykel6.jpg" alt="..." data-toggle="modal" data-target="#productModalc2"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">OUI It´s NEON</h5>
+                            <!-- Product price-->
+                            $2,500.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('OUI It´s NEON')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">OUI It´s NEON</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel6.jpg" alt="Produktbild">
+                      <p>
+                      
+                        OUI It's NEON är en livfull och iögonfallande cykel med en lysande neonfärgad design.</p>
+                      <p>$2,500.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('OUI It´s NEON')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Cykel2.jpg" alt="..." data-toggle="modal" data-target="#productModalc3"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Tekno-Trekker</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $2,000.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Tekno-Trekker')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Tekno-Trekker</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel2.jpg" alt="Produktbild">
+                      <p>
+Tekno-Trekker är en modern och mångsidig cykel som är designad för äventyr och terrängcykling, med robusta egenskaper och avancerad teknik.</p>
+                      <p>$2,000.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Tekno-Trekker')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Cykel3.jpg" alt="..." data-toggle="modal" data-target="#productModalc4"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Nightmare Flash</h5>
+                            <!-- Product price-->
+                            $700.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Nightmare Flash')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Nightmare Flash</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel3.jpg" alt="Produktbild">
+                      <p>
+                        Nightmare Flash är en extremt snabb och sportig cykel med ett slående designkoncept som drar blicken till sig. Den är byggd för dem som älskar hög hastighet och spänning på två hjul.</p>
+                      <p>$700.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Nightmare Flash')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Cykel1.jpg" alt="..." data-toggle="modal" data-target="#productModalc5"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Pedal Punchline</h5>
+                            <!-- Product price-->
+                            $500.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Pedal Punchline')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalc5" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Pedal Punchline</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Cykel1.jpg" alt="Produktbild">
+                      <p>
+                        Pedal Punchline är en lättrampad och rolig cykel som ger en humoristisk touch till din cykeltur. Den är idealisk för dem som letar efter en avslappnad och underhållande cykelupplevelse.</p>
+                      <p>$500.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Pedal Punchline')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+    <footer id="ajaxFoot" class="py-3 bg-dark" ></footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        async function loadContent() {
+          const data = {
+            "Navigation.html": "ajaxNav",
+            "Footer.html": "ajaxFoot",
+          };
+          const yeeet = [["Navigation", "ajaxNav"]];
+  
+          await Promise.all(
+            Object.entries(data).map(async ([page, target]) =>
+              fetch(page).then(
+                async (response) =>
+                  (document.getElementById(target).innerHTML =
+                    await response.text())
+              )
+            )
+          );
+  
+          ladda();
+        }
+        loadContent();
+      </script>
+      <script src="cart.js"></script>
+
+</body>
+</html>

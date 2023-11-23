@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelDeal - Skateboards</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="app.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        #navSkate{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<nav style="height: 100px;" id="ajaxNav" class="navbar navbar-expand-md navbar-light bg-light fixed-top"></nav>
+
+    <div class="conomoss">
+
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5" style="padding-top: 5.5rem;">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Skateboards</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Bläddra igenom våra skateboards</p>
+                    <p>
+                        <a href="cart.html"></a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        </div>
+
+    <div class="container px-4 px-lg-5 mt-5 products">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/Skateoard1.jpg" alt="..." data-toggle="modal" data-target="#productModalS"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">ICE BreakeR</h5>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('ICE BreakeR')">Lägg Till</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalS" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">ICE BreakeR</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Skateoard1.jpg" alt="Produktbild">
+                      <p>
+                        ICE BreakeR är en skateboard med en snygg och funktionell design som ger en smidig och kontrollerad åktur. Den är perfekt för skatboardåkare som söker balans mellan stil och prestanda.</p>
+                      <p>$100.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('ICE BreakeR')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/skateboard2.jpg" alt="..."  data-toggle="modal" data-target="#productModalS1"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">THE Mechanical Respect</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('THE Mechanical Respect')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalS1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">THE Mechanical Respect</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Skateboard2.jpg" alt="Produktbild">
+                      <p>
+                        THE Mechanical Respect är en skateboard som kombinerar teknisk innovation och respekt för skatboardkulturen. Med avancerad konstruktion och stilfull design erbjuder den en smidig åktur och utmärkt kontroll, samtidigt som den hedrar skateboardens rötter och traditioner. Den är perfekt för både erfarna skateboardåkare och de som vill börja utforska sporten.</p>
+                      <p>$100.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('THE Mechanical Respect')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Skateboard3.jpg" alt="..." data-toggle="modal" data-target="#productModalS2"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Future Genius</h5>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Future Genius')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalS2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Future Genius</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Skateboard3.jpg" alt="Produktbild">
+                      <p>
+                        Future Genius är en skateboard som speglar framtidens skateboardåkare. Med sin moderna design och teknik är den utformad för att inspirera och möjliggöra storslagna tricks och prestationer. Den är perfekt för unga och ambitiösa skateboardentusiaster som strävar efter att bli framtidens stjärnor på brädet.</p>
+                      <p>$100.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Future Genius')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Skateboard4.jpg" alt="..." data-toggle="modal" data-target="#productModalS3"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Dad & Son</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Dad & Son')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalS3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Dad & Son</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Skateboard4.jpg" alt="Produktbild">
+                      <p>
+                        Dad & Son skateboardpaketet är det ultimata sättet för pappa och son att dela kärleken till skateboarding. Det inkluderar två skateboard, en för varje åkare, så att de kan njuta av skateboarding tillsammans. Med högkvalitativa brädor och en chans att dela minnen och skapandet av nya färdigheter är detta paket en perfekt inledning till skateboarding för både pappan och sonen.</p>
+                      <p>$100.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Dad & Son')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Skateboard5.jpg" alt="..." data-toggle="modal" data-target="#productModalS4"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Purble And Secured</h5>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Purble And Secured')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="productModalS4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="productModalLabel">Purble And Secured</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+                      <img src="./Assets/Skateboard5.jpg" alt="Produktbild">
+                      <p>
+                        Purble And Secured är en skateboard med en unik och djärv design i lila färger. Den är inte bara stilfull utan också robust och säker, vilket gör den till ett utmärkt val för både nybörjare och erfarna skateboardåkare som söker en pålitlig bräda med en färgstark touch.
+                    </p>
+                      <p>$100.00</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+                      <button onclick="addToCart('Purble And Secured')">Lägg Till</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="./Assets/Skateboard6.jpg" alt="..." data-toggle="modal" data-target="#productModalS5"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Robert Wadlow 272</h5>
+                            <!-- Product price-->
+                            $100.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center cartButton"><button onclick="addToCart('Robert Wadlow 272')">Lägg Till</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModalS5" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Robert Wadlow 272</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Stäng">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Här kan du placera produktinformationen, bilder, beskrivning, etc. -->
+              <img src="./Assets/Skateboard6.jpg" alt="Produktbild">
+              <p>
+                Robert Wadlow 272 är en skateboard som hyllar den legendariska längdhopparen Robert Wadlow, känd som den längsta människan som någonsin dokumenterats i historien. Med sin extra långa bräda ger den en stabil och avslappnad åktur. Den är idealisk för de som vill kombinera sin passion för skateboarding med en historisk touch.
+            </p>
+              <p>$100.00</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Stäng</button>
+              <button onclick="addToCart('Robert Wadlow 272')">Lägg Till</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div style="clear:both;">
+        <footer id="ajaxFoot" class="py-3 bg-dark" ></footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        async function loadContent() {
+          const data = {
+            "Navigation.html": "ajaxNav",
+            "Footer.html": "ajaxFoot",
+          };
+          const yeeet = [["Navigation", "ajaxNav"]];
+  
+          await Promise.all(
+            Object.entries(data).map(async ([page, target]) =>
+              fetch(page).then(
+                async (response) =>
+                  (document.getElementById(target).innerHTML =
+                    await response.text())
+              )
+            )
+          );
+  
+          ladda();
+        }
+        loadContent();
+      </script>
+      <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WheelDeal</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body onload="showCart()" style="background-image: none">
+    <nav
+      style="height: 100px"
+      id="ajaxNav"
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+    ></nav>
+    <header
+      style="height: 100px; visibility: hidden"
+      id="ajaxHead"
+      class="bg-dark py-5"
+    ></header>
+
+    <div>
+      <h1>Kundkorg</h1>
+      <br />
+      <div id="cartTable">
+        <h3>Produkter</h3>
+        <table id="cartList" style="text-align: center"></table>
+        <br />
+        <hr />
+        <h3 id="countCart">Totalt - 0 produkter : $0</h3>
+        <hr />
+        <input type="button" value="Töm" onclick="ClearAll()" />
+        <input
+          id="invoice"
+          type="button"
+          value="Köp"
+          onclick="window.location.href='invoice.html'"
+        />
+      </div>
+      <br /><br />
+      <br /><br />
+      <br /><br />
+    </div>
+
+    <footer id="ajaxFoot" style="margin-top: auto; bottom: 0px;" class="py-3 bg-dark"></footer>
+
+    <!-- Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      async function loadContent() {
+        const data = {
+          "Navigation.html": "ajaxNav",
+          "Header.html": "ajaxHead",
+          "Footer.html": "ajaxFoot",
+        };
+        const yeeet = [["Navigation", "ajaxNav"]];
+
+        await Promise.all(
+          Object.entries(data).map(async ([page, target]) =>
+            fetch(page).then(
+              async (response) =>
+                (document.getElementById(target).innerHTML =
+                  await response.text())
+            )
+          )
+        );
+
+        ladda();
+      }
+      loadContent();
+    </script>
+    <script src="cart.js"></script>
+  </body>
+</html>
