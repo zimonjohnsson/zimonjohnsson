@@ -1,0 +1,90 @@
+@use "base";
+
+footer#footer {
+    width: 100%;
+    padding: 5dvh 0;
+
+    background-color: base.$blackish;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-left: auto;
+
+    .inner {
+        width: 100%;
+        max-width: base.$common-max-width;
+
+        display: flex;
+        flex-direction: column;
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            .footer-row {
+                margin: 0px 5%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: start;
+                column-gap: calc(5% + 25px);
+                
+                .footer-planets,
+                .footer-sitemap,
+                .footer-contact {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 { 
+                        font-size: 1.3rem; 
+                        font-weight: 700; 
+                        opacity: 0.8;
+                    }
+
+                    a { 
+                        size: 1rem; 
+                        opacity: 0.6; 
+                        transition: 0.3s;
+
+                        &:hover { 
+                            transition: 0.3s; 
+                            opacity: 1; 
+                        }
+                    }
+                }
+
+                .footer-img {
+                    margin-left: auto;
+
+
+
+                    img {
+                        margin: 0px;
+                        width: 400px;
+                    }   
+                    @media (max-width: 1010px){ img { margin: 0px; width: 300px; } }
+                    @media (max-width: 877px){ img { margin: 0px; width: 250px; } }
+                    @media (max-width: 810px){ img { margin: 0px; width: 200px; } }
+                    @media (max-width: 745px){ img { margin: 0px; width: 0px; } }
+                }
+
+            }
+
+            @media (max-width: 745px){ .footer-row { justify-content: center; .footer-img { display: none; } } }
+        }
+        
+
+
+        .copyright-container {
+            p {
+                padding: 10px 0px;
+                font-size: 12px;
+                opacity: 0.4;
+                text-align: center;
+            }
+        }
+    }
+}

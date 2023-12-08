@@ -1,0 +1,64 @@
+@use "error";
+@use "footer";
+@use "nav";
+@use "home";
+@use "item";
+@use "planet";
+@use "login";
+@use "profil";
+@use "solarsystem";
+@use "base";
+
+#root {
+    width: 100%;
+}
+
+* {
+    // scrollbar-gutter: stable;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    &::selection {
+        color: base.$mark-text;
+    }
+}
+
+body {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+    overflow-x: hidden;
+
+    background-color: base.$blackish;
+    font-weight: 400;
+
+    font-family: base.$font-titelnormal;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+svg,
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
