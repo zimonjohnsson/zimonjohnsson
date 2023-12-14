@@ -79,11 +79,11 @@ html{
     font-size: 2.5rem;
     color: rgba(211, 211, 211, 0);
     user-select: none;
-    text-shadow: 3px 3px #000000ec;
 }
 
 .textladda{
     color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px #000000ec;
     transition: 1s ease;
 }
 
