@@ -218,11 +218,19 @@ html{
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     #navbar{
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    #navbarlogo{
+        margin-left: 2%;
+    }
+
+    #navbarlogo img{
+        height: 3rem;
     }
 
     #navbarlinks{
