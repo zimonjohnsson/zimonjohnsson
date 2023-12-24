@@ -169,6 +169,10 @@ html{
     text-align: center;
 }
 
+.placeh a{
+    color: black;
+}
+
 #footer{
     background-color: rgba(145, 145, 145, 0.662);
     width: 100%;
